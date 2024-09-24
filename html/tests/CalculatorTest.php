@@ -6,17 +6,17 @@ require_once __DIR__ . '/../src/Calculator.php';
 
 class CalculatorTest extends TestCase {
 
-    // assertEquals(): Vérifie si deux valeurs sont égales.
-    // assertNotEquals(): Vérifie si deux valeurs ne sont pas égales.
-    // assertTrue(): Vérifie si une condition est vraie.
-    // assertFalse(): Vérifie si une condition est fausse.
-    // assertNull(): Vérifie si une valeur est nulle.
-    // assertNotNull(): Vérifie si une valeur n'est pas nulle.
-    // assertInstanceOf(): Vérifie si un objet est une instance d'une classe spécifique.
+    // assertEquals(): Checks if two values are equals.
+    // assertNotEquals(): Checks if two values are not equals.
+    // assertTrue(): Checks if a condition is true.
+    // assertFalse(): Checks if a condition is false.
+    // assertNull(): Checks if a value is null.
+    // assertNotNull(): Checks if a value is not null.
+    // assertInstanceOf(): Checks whether an object is an instance of a specific class.
 
-    // setUp(): Méthode utilisée pour effectuer des initialisations avant l'exécution de chaque test. Cela permet de réduire la duplication de code et de garantir un état initial cohérent pour chaque test.
-    // tearDown(): Méthode utilisée pour nettoyer les ressources ou effectuer des actions de nettoyage après l'exécution de chaque test. Cela garantit une isolation correcte entre les tests et évite les effets de bord indésirables.
-    // expectException(): Méthode utilisée pour tester si une exception spécifique est levée lors de l'exécution du code testé.
+    // setUp(): Method used to perform initializations before executing each test. This reduces code duplication and ensures a consistent initial state for each test.
+    // tearDown(): Method used to clean up resources or perform clean-up actions after each test has been run. This ensures correct isolation between tests and avoids unwanted side effects.
+    // expectException(): Method used to test whether a specific exception is raised when executing the code under test.
 
     protected $calculator;
 
