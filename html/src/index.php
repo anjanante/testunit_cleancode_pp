@@ -1,61 +1,61 @@
 <?php
 
-// Mauvais exemple
+// Bad example
 $a = calculateArea($width, $height);
 
-// Bon exemple
+// Good example
 $rectangleArea = calculateRectangleArea($rectangleWidth, $rectangleHeight);
 
-// Mauvais exemple
+// Bad example
 function processUserRegistration($username, $email, $password, $address, $phoneNumber) {
-    // Traitement complexe
+    // Complex treatment
     // ...
 }
 
-// Bon exemple
+// Good example
 function registerUser($username, $email, $password) {
-    // Traitement pour l'enregistrement d'un utilisateur
+    // User registration processing
     // ...
 }
 
-// Mauvais exemple
+// Bad example
 if ($condition1) {
     if ($condition2) {
         if ($condition3) {
-            // Traitement
+            // treatment
         }
     }
 }
 
-// Bon exemple
+// Good example
 if ($condition1 && $condition2 && $condition3) {
-    // Traitement
+    // treatment
 }
 
-// Mauvais exemple
+// Bad example
 class Utilisateur {
     public function inscription($donnees) {
-        // Traitement d'inscription
-        // Envoi de mail de confirmation
-        // Ajout de l'utilisateur à la base de données
+        // Registration processing
+        // Send confirmation e-mail
+        // Add user to database
     }
 }
 
-// Bon exemple
+// Good example
 class Utilisateur {
     public function inscription($donnees) {
-        // Traitement d'inscription
+        // Registration processing
     }
 }
 
 class ServiceMail {
     public function envoyerConfirmation($email) {
-        // Envoi du mail de confirmation
+        // Send confirmation e-mail
     }
 }
 
 class ServiceBaseDonnees {
     public function ajouterUtilisateur($donnees) {
-        // Ajout de l'utilisateur à la base de données
+        // Add user to database
     }
 }
