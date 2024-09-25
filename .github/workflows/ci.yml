@@ -71,7 +71,7 @@ jobs:
       #  run: cd html && bin/console lint:container
       # —— Migrations ———————————————————————————————————————————————————————
       - name: Migrate
-        run: bin/console doctrine:migrations:migrate -n
+        run: bin/console doctrine:migrations:migrate --no-interaction
       - name: Force schema (doesn't work if not executed)
         run: bin/console doctrine:schema:update -n --force
       - name: Schema validate
