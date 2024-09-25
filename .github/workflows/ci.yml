@@ -52,6 +52,8 @@ jobs:
       - name: Validate composer.json and composer.lock and Install Composer dependencies
         run: composer validate --no-check-publish && composer install
       # —— Symfony ——————————————————————————————————————————————————————————
+      - name: Make bin/console executable
+        run: chmod +x bin/console
       - name: Check the Symfony console
         run: bin/console -V
       # —— PHP-CS-Fixer —————————————————————————————————————————————————————
